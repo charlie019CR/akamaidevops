@@ -1,0 +1,122 @@
+{
+    "rules": {
+        "name": "default",
+        "children": [
+            "#include:Default_CORS_Policy.json",
+            "#include:New_Rule.json"
+        ],
+        "behaviors": [
+            {
+                "name": "origin",
+                "options": {
+                    "originType": "CUSTOMER",
+                    "hostname": "d19n96lgrquhw5.cloudfront.net",
+                    "forwardHostHeader": "ORIGIN_HOSTNAME",
+                    "cacheKeyHostname": "ORIGIN_HOSTNAME",
+                    "compress": true,
+                    "enableTrueClientIp": true,
+                    "originCertificate": "",
+                    "verificationMode": "PLATFORM_SETTINGS",
+                    "ports": "",
+                    "httpPort": 80,
+                    "httpsPort": 443,
+                    "trueClientIpHeader": "True-Client-IP",
+                    "trueClientIpClientSetting": false,
+                    "originSni": true
+                }
+            },
+            {
+                "name": "cpCode",
+                "options": {
+                    "value": {
+                        "id": 925791,
+                        "description": "cfonsecapr.akamaized.net",
+                        "products": [
+                            "Adaptive_Media_Delivery"
+                        ],
+                        "createdDate": 1579543142000,
+                        "cpCodeLimits": {
+                            "limit": 3548,
+                            "currentCapacity": -344,
+                            "limitType": "account"
+                        },
+                        "name": "cfonsecapr.akamaized.net"
+                    }
+                }
+            },
+            {
+                "name": "segmentedMediaOptimization",
+                "options": {
+                    "behavior": "LIVE",
+                    "showAdvanced": false,
+                    "enableUllStreaming": false
+                }
+            },
+            {
+                "name": "originCharacteristics",
+                "options": {
+                    "authenticationMethod": "AUTOMATIC",
+                    "country": "LATIN_AMERICA",
+                    "authenticationMethodTitle": ""
+                }
+            },
+            {
+                "name": "contentCharacteristicsAMD",
+                "options": {
+                    "catalogSize": "SMALL",
+                    "contentType": "SD",
+                    "dash": false,
+                    "hds": false,
+                    "hls": true,
+                    "popularityDistribution": "ALL_POPULAR",
+                    "segmentDurationHLS": "SEGMENT_DURATION_8S",
+                    "segmentSizeHLS": "ONE_MB_TO_TEN_MB",
+                    "smooth": false
+                }
+            },
+            {
+                "name": "clientCharacteristics",
+                "options": {
+                    "country": "GLOBAL"
+                }
+            },
+            {
+                "name": "segmentedMediaStreamingPrefetch",
+                "options": {
+                    "enabled": true
+                }
+            },
+            {
+                "name": "cacheKeyQueryParams",
+                "options": {
+                    "behavior": "IGNORE_ALL"
+                }
+            },
+            {
+                "name": "segmentedContentProtection",
+                "options": {
+                    "tokenAuthenticationTitle": "",
+                    "enabled": true,
+                    "mediaEncryptionTitle": "",
+                    "hlsMediaEncryption": false,
+                    "key": "b3b46d832a557b24f07318dc",
+                    "useAdvanced": false,
+                    "tokenAuthHLSTitle": "",
+                    "enableTokenInURI": true,
+                    "tokenRevocationTitle": "",
+                    "tokenRevocationEnabled": false,
+                    "hlsMasterManifestFiles": [
+                        "master.m3u8",
+                        "index.m3u8",
+                        "playlist.m3u8"
+                    ]
+                }
+            }
+        ],
+        "options": {
+            "is_secure": false
+        },
+        "variables": [],
+        "advancedOverride": "<!-- Cascaded Timeouts -->\n<network:http.client-timeout>4s</network:http.client-timeout>\n<network:http.connect-timeout>4s</network:http.connect-timeout>\n<match:request.type value=\"PARENT\">\n    <network:http.read>2s</network:http.read>\n    <network:http.connect-timeout>2s</network:http.connect-timeout>\n    <!-- if this parent is also a peer, change timeouts to be faster -->\n    <match:request.type value=\"PEER_REQ\">\n        <network:http.read>1s</network:http.read>\n        <network:http.connect-timeout>1s</network:http.connect-timeout>\n    </match:request.type>\n</match:request.type>\n<!-- Cascaded Timeouts -->\n<!-- lower negative TTL for 404 -->\n<match:request.type result=\"false\" value=\"PREFETCH_INCOMING PREFETCH_OUTGOING\">\n    <match:response.status value=\"404\">\n        <cache:negative-ttl2>\n            <status>on</status>\n            <value>1s</value>\n        </cache:negative-ttl2>\n    </match:response.status>\n</match:request.type>\n<!-- lower negative TTL for 404 -->\n<!-- 2 tier CH with alternative failover of td0 map at Edge -->\n<!-- this is needed for media product relying on hd.data, \n     if you use it for none media products you can remove the setting of FSS_PATH and use AK_PATH directly -->\n<assign:variable>\n  <name>FSS_PATH</name>\n  <value>%(AK_PATH)</value>\n</assign:variable>\n<match:variable name=\"MEDIASEC_AK_PATH\" value=\"?*\" value-wildcard=\"on\">\n  <assign:variable>\n      <name>FSS_PATH</name>\n      <value>%(MEDIASEC_AK_PATH)</value>\n  </assign:variable>\n</match:variable>\n<assign:variable>\n    <name>HASHVAL1</name>\n    <value>%(FSS_PATH)</value> <!-- replace it with AK_PATH if it's not for a media product implementation -->\n    <transform>\n    <hash>\n       <min>700</min>\n       <max>900</max>\n    </hash>\n    </transform>\n</assign:variable>\n<assign:variable>\n    <name>TD0_MAP</name>\n    <value>ch2.akamai.net </value>\n</assign:variable>\n<assign:variable>\n    <name>TD_ALT_MAP</name>\n    <value>ch5.akamai.net</value>\n</assign:variable>\n<!-- Failover: we use another TD0 map in case of error -->\n<match:request.type value=\"EDGE\">\n    <match:request.header name=\"CH-Failover\" value=\"true\" value-case=\"on\">        \n        <assign:variable>\n            <name>TD0_MAP</name>\n            <value>%(TD_ALT_MAP)</value>\n        </assign:variable>\n        <!-- in case ICP caused an issue we are going forward to alternative parent without ICP -->\n        <network:icp.status>off</network:icp.status>        \n        <reporting:lds.custom-field>td0-failover-request</reporting:lds.custom-field>    \n    </match:request.header>\n</match:request.type>\n<match:request.type value=\"PEER_REQ\" result=\"false\">\n    <match:request.type value=\"CLIENT_REQ\">\n        <match:fail-action2-attempt value=\"0\">\n            <match:request.header name=\"AKA-X-DEBUG\" value=\"*edge-connect-error*\" value-case=\"off\" value-wildcard=\"on\">\n                <network:pconn.peer.forward.status>off</network:pconn.peer.forward.status>\n                <edgeservices:simulate-error>\n                    <code>ERR_CONNECT_FAIL</code>\n                    <status>on</status>\n                </edgeservices:simulate-error>\n            </match:request.header>\n            <match:request.header name=\"AKA-X-DEBUG\" value=\"*edge-connect-timeout*\" value-case=\"off\" value-wildcard=\"on\">\n                <network:pconn.peer.forward.status>off</network:pconn.peer.forward.status>\n                <edgeservices:simulate-error>\n                    <code>ERR_CONNECT_TIMEOUT</code>\n                    <status>on</status>\n                </edgeservices:simulate-error>\n            </match:request.header>\n            <!-- trigger failaction only if OS failover hadn't been triggered before -->\n            <match:response.status value=\"0 000 502 503 504\">\n                <match:response.header result=\"false\" name=\"X-OS-FAILOVER\" value=\"true\">\n                    <forward:availability.fail-action2>\n                        <type>serve-alternate</type>\n                        <apply-on-all-hops>off</apply-on-all-hops>\n                        <apply-to-range-request>on</apply-to-range-request>\n                        <max-attempts>1</max-attempts>\n                        <status>on</status>\n                        <add-header>\n                            <status>on</status>\n                            <name>CH-Failover</name>\n                            <value>true</value>\n                        </add-header>                        \n                    </forward:availability.fail-action2>\n                </match:response.header>\n            </match:response.status>\n            <!-- rewrite error status code to 404 so client can trigger client side failover -->\n            <match:response.status value=\"400 416 500:504\">\n                <edgeservices:modify-outgoing-response.client-status-code-override>404</edgeservices:modify-outgoing-response.client-status-code-override>\n            </match:response.status>\n        </match:fail-action2-attempt>\n    </match:request.type>\n</match:request.type>"
+    }
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "cnameType": "SHARED_CERT",
+        "edgeHostnameId": 4152437,
+        "cnameFrom": "cfonsecapr.akamaized.net",
+        "cnameTo": "cfonsecapr.akamaized.net",
+        "certProvisioningType": "CPS_MANAGED"
+    }
+]

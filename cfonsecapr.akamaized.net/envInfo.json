@@ -1,0 +1,27 @@
+{
+    "name": "cfonsecapr.akamaized.net",
+    "propertyId": 592954,
+    "propertyName": "cfonsecapr.akamaized.net",
+    "groupId": 19293,
+    "isSecure": false,
+    "latestVersionInfo": {
+        "propertyVersion": 29,
+        "updatedByUser": "cfonseca",
+        "updatedDate": "2022-03-09T17:40:25Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "71a4b33ab2a6c1c2020bac7eb25640ce8121634a",
+        "productId": "prd_Adaptive_Media_Delivery",
+        "ruleFormat": "latest"
+    },
+    "activeIn_PRODUCTION_Info": {
+        "propertyVersion": 28,
+        "updatedByUser": "cfonseca",
+        "updatedDate": "2022-01-26T20:03:29Z",
+        "productionStatus": "ACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "23ccc4d5f2bf6784961ab7ed110216d7c0d8f671",
+        "productId": "prd_Adaptive_Media_Delivery",
+        "ruleFormat": "latest"
+    }
+}

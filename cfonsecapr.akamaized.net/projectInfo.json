@@ -1,0 +1,11 @@
+{
+    "productId": "Adaptive_Media_Delivery",
+    "contractId": "1-1NC95D",
+    "groupId": 19293,
+    "version": "0.7.8-RELEASE",
+    "isSecure": false,
+    "edgeGridConfig": {
+        "section": "papi"
+    },
+    "name": "cfonsecapr.akamaized.net.testing"
+}
