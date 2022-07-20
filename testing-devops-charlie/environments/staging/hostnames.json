@@ -1,0 +1,8 @@
+[
+    {
+        "cnameFrom": "staging.testing-devops-charlie",
+        "cnameTo": "staging.testing-devops-charlie.edgekey.net",
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": null
+    }
+]

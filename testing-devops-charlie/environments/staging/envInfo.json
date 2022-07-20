@@ -1,0 +1,17 @@
+{
+    "name": "staging",
+    "propertyName": "staging.testing-devops-charlie",
+    "groupId": 19293,
+    "isSecure": true,
+    "propertyId": 818385,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "cfonseca",
+        "updatedDate": "2022-07-20T22:43:28Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "productId": "prd_Fresca",
+        "ruleFormat": "v2021-09-22"
+    },
+    "suggestedRuleFormat": "v2021-09-22"
+}
