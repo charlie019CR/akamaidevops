@@ -1,0 +1,8 @@
+[
+    {
+        "cnameFrom": "prod.trip-cfonsecav1.com",
+        "cnameTo": "prod.trip-cfonsecav1.com.edgekey.net",
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": null
+    }
+]

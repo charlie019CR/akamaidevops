@@ -1,0 +1,17 @@
+{
+    "productId": "Fresca",
+    "contractId": "1-1NC95D",
+    "groupIds": [
+        65552
+    ],
+    "environments": [
+        "cfonsecapipeline",
+        "prod"
+    ],
+    "version": "0.7.8-RELEASE",
+    "isSecure": true,
+    "edgeGridConfig": {
+        "section": "papi"
+    },
+    "name": "trip-cfonsecav1.com"
+}

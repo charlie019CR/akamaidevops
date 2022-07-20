@@ -1,0 +1,17 @@
+{
+    "name": "cfonsecapipeline",
+    "propertyName": "cfonsecapipeline.trip-cfonsecav1.com",
+    "groupId": 65552,
+    "isSecure": true,
+    "propertyId": 818371,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "cfonseca",
+        "updatedDate": "2022-07-20T21:55:38Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "productId": "prd_Fresca",
+        "ruleFormat": "v2021-09-22"
+    },
+    "suggestedRuleFormat": "v2021-09-22"
+}
