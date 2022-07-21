@@ -4345,3 +4345,413 @@
 [2022-07-20T16:43:41.393] [INFO] devops-prov.template - looking at rule: Strengthen security
 [2022-07-20T16:43:41.394] [INFO] devops-prov.template - looking at rule: Increase availability
 [2022-07-20T16:43:41.394] [INFO] devops-prov.template - looking at rule: Minimize payload
+[2022-07-20T17:00:35.464] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2022-07-20T17:00:35.466] [INFO] devops-prov.factory - Using credentials file: '/Users/cfonseca/.edgerc', section: 'papi'
+[2022-07-20T17:00:45.970] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2022-07-20T17:00:45.972] [INFO] devops-prov.factory - Using credentials file: '/Users/cfonseca/.edgerc', section: 'papi'
+[2022-07-20T17:00:45.974] [INFO] devops-prov.project - Overriding edgegrid config with project default:  { section: 'papi' }
+[2022-07-20T17:00:45.975] [INFO] devops-prov.envionment - Merge environment: 'dev' in pipeline: 'testing-devops-charlie'
+[2022-07-20T17:00:45.978] [INFO] devops-prov.el - parsing: default
+[2022-07-20T17:00:45.978] [INFO] devops-prov.el - parsing: #include:Augment_insights.json
+[2022-07-20T17:00:45.979] [INFO] devops-prov.el - parsing: Augment insights
+[2022-07-20T17:00:45.980] [INFO] devops-prov.el - parsing: Traffic reporting
+[2022-07-20T17:00:45.980] [INFO] devops-prov.el - parsing: cpCode
+[2022-07-20T17:00:45.980] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.980] [INFO] devops-prov.el - parsing: Identify your main traffic segments so you can granularly zoom in your traffic statistics like hits, bandwidth, offload, response codes, and errors.
+[2022-07-20T17:00:45.980] [INFO] devops-prov.el - parsing: mPulse RUM
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: mPulse
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: V12
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: Collect and analyze real-user data to monitor the performance of your website.
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: Geolocation
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: edgeScape
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: requestType
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: IS
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: CLIENT_REQ
+[2022-07-20T17:00:45.981] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.982] [INFO] devops-prov.el - parsing: Receive data about a user's geolocation and connection speed in a request header. If you change cached content based on the values of the X-Akamai-Edgescape request header, contact your account representative.
+[2022-07-20T17:00:45.982] [INFO] devops-prov.el - parsing: Log delivery
+[2022-07-20T17:00:45.982] [INFO] devops-prov.el - parsing: report
+[2022-07-20T17:00:45.982] [INFO] devops-prov.el - parsing: OFF
+[2022-07-20T17:00:45.982] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.982] [INFO] devops-prov.el - parsing: Specify the level of detail you want to be logged in your Log Delivery Service reports. Log User-Agent Header to obtain detailed information in the Traffic by Browser and OS report.
+[2022-07-20T17:00:45.982] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.982] [INFO] devops-prov.el - parsing: Control the settings related to monitoring and reporting. This gives you additional visibility into your traffic and audiences.
+[2022-07-20T17:00:45.982] [INFO] devops-prov.el - parsing: #include:Accelerate_delivery.json
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: Accelerate delivery
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: Origin connectivity
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: dnsAsyncRefresh
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: 1h
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: timeout
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: 5s
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: readTimeout
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: 120s
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: Optimize the connection between edge and origin.
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: Protocol optimizations
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: enhancedAkamaiProtocol
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: http2
+[2022-07-20T17:00:45.983] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: allowTransferEncoding
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: sureRoute
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: 30m
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: ${env.sureRouteTestObject}
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - Replacing '${env.sureRouteTestObject}' with: '/akamai/sure-route-test-object.html'
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: INCOMING_HH
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: PERFORMANCE
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: Serve your website using modern and fast protocols.
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: Prefetching
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: Prefetching objects
+[2022-07-20T17:00:45.984] [INFO] devops-prov.el - parsing: Bots
+[2022-07-20T17:00:45.985] [INFO] devops-prov.el - parsing: prefetch
+[2022-07-20T17:00:45.985] [INFO] devops-prov.el - parsing: userAgent
+[2022-07-20T17:00:45.985] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2022-07-20T17:00:45.985] [INFO] devops-prov.el - parsing: *bot*
+[2022-07-20T17:00:45.985] [INFO] devops-prov.el - parsing: *crawl*
+[2022-07-20T17:00:45.985] [INFO] devops-prov.el - parsing: *spider*
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: Disable prefetching for specific clients identifying themselves as bots and crawlers. This avoids requesting unnecessary resources from the origin.
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: prefetch
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: Define for which HTML pages prefetching should be enabled.
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: Prefetchable objects
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: prefetchable
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: fileExtension
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: css
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: js
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: jpg
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: jpeg
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: jp2
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: png
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: gif
+[2022-07-20T17:00:45.986] [INFO] devops-prov.el - parsing: svg
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: svgz
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: webp
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: eot
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: woff
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: woff2
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: otf
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: ttf
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: Define which resources should be prefetched.
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: Instruct edge servers to retrieve embedded resources before the browser requests them.
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: Adaptive acceleration
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: adaptiveAcceleration
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: DISABLED
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: mPulse
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: Automatically and continuously apply performance optimizations to your website using machine learning.
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: Control the settings related to improving the performance of delivering objects to your users.
+[2022-07-20T17:00:45.987] [INFO] devops-prov.el - parsing: #include:Offload_origin.json
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: Offload origin
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: CSS and JavaScript
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: caching
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: MAX_AGE
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: 45d
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: fileExtension
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: css
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: js
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: any
+[2022-07-20T17:00:45.988] [INFO] devops-prov.el - parsing: Override the default caching behavior for CSS and JavaScript
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: Fonts
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: caching
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: MAX_AGE
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: 30d
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: fileExtension
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: eot
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: woff
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: woff2
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: otf
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: ttf
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: any
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: Override the default caching behavior for fonts.
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: Images
+[2022-07-20T17:00:45.989] [INFO] devops-prov.el - parsing: caching
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: MAX_AGE
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: 30d
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: fileExtension
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: jpg
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: jpeg
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: png
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: gif
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: webp
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: jp2
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: ico
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: svg
+[2022-07-20T17:00:45.990] [INFO] devops-prov.el - parsing: svgz
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: any
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: Override the default caching behavior for images.
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: Files
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: caching
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: MAX_AGE
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: 7d
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: fileExtension
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: pdf
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: doc
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: docx
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: odt
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: any
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: Override the default caching behavior for files. Files containing Personal Identified Information (PII) should require Edge authentication or not be cached at all.
+[2022-07-20T17:00:45.994] [INFO] devops-prov.el - parsing: Other static objects
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: caching
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: MAX_AGE
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: 7d
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: fileExtension
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: aif
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: aiff
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: au
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: avi
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: bin
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: bmp
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: cab
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: carb
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: cct
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: cdf
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: class
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: dcr
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: dtd
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: exe
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: flv
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: gcf
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: gff
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: grv
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: hdml
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: hqx
+[2022-07-20T17:00:45.995] [INFO] devops-prov.el - parsing: ini
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: mov
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: mp3
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: nc
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: pct
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: ppc
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: pws
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: swa
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: swf
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: txt
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: vbs
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: w32
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: wav
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: midi
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: wbmp
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: wml
+[2022-07-20T17:00:45.996] [INFO] devops-prov.el - parsing: wmlc
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: wmls
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: wmlsc
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: xsd
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: zip
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: pict
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: tif
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: tiff
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: mid
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: jxr
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: jar
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: any
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: Override the default caching behavior for other static objects.
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: HTML pages
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: caching
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: NO_STORE
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: cacheKeyQueryParams
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: IGNORE
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: gclid
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: fbclid
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: utm_source
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: utm_campaign
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: utm_medium
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: utm_content
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: fileExtension
+[2022-07-20T17:00:45.997] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: html
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: htm
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: php
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: jsp
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: aspx
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: EMPTY_STRING
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: Override the default caching behavior for HTML pages cached on edge servers.
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: Redirects
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: cacheRedirect
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: false
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: chaseRedirects
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: Configure caching for HTTP redirects. The redirect is cached for the same TTL as a 200 HTTP response when this feature is enabled.
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: POST responses
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: cachePost
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: Define when HTTP POST requests should be cached. You should enable it under a criteria match.
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: GraphQL
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: graphqlCaching
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: path
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: MATCHES_ONE_OF
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: /graphql
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.998] [INFO] devops-prov.el - parsing: Define when your GraphQL queries should be cached.
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: Uncacheable objects
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: downstreamCache
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: BUST
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: cacheability
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: IS_NOT
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: CACHEABLE
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: Configure the default client caching behavior for uncacheable content at the edge.
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: caching
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: NO_STORE
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: tieredDistribution
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: validateEntityTag
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: removeVary
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: cacheError
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: 10s
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: cacheKeyQueryParams
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: INCLUDE_ALL_ALPHABETIZE_ORDER
+[2022-07-20T17:00:45.999] [INFO] devops-prov.el - parsing: prefreshCache
+[2022-07-20T17:00:46.000] [INFO] devops-prov.el - parsing: downstreamCache
+[2022-07-20T17:00:46.000] [INFO] devops-prov.el - parsing: LESSER
+[2022-07-20T17:00:46.000] [INFO] devops-prov.el - parsing: ALLOW
+[2022-07-20T17:00:46.000] [INFO] devops-prov.el - parsing: CACHE_CONTROL
+[2022-07-20T17:00:46.000] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.000] [INFO] devops-prov.el - parsing: Control the settings related to caching content at the edge and in the browser. As a result, fewer requests go to your origin, fewer bytes leave your data centers, and your assets are closer to your users.
+[2022-07-20T17:00:46.000] [INFO] devops-prov.el - parsing: #include:Strengthen_security.json
+[2022-07-20T17:00:46.000] [INFO] devops-prov.el - parsing: Strengthen security
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: Allowed methods
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: POST
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: allowPost
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: Allow use of the POST HTTP request method.
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: OPTIONS
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: allowOptions
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: Allow use of the OPTIONS HTTP request method.
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: PUT
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: allowPut
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: Allow use of the PUT HTTP request method.
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: DELETE
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: allowDelete
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: Allow use of the DELETE HTTP request method.
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: PATCH
+[2022-07-20T17:00:46.001] [INFO] devops-prov.el - parsing: allowPatch
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: Allow use of the PATCH HTTP request method.
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: allHttpInCacheHierarchy
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: Allow the use of HTTP methods. Consider enabling additional methods under a path match for increased origin security.
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: Obfuscate debug info
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: cacheTagVisible
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: PRAGMA_HEADER
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: Do not expose back-end information unless the request contains the Pragma debug header.
+[2022-07-20T17:00:46.002] [INFO] devops-prov.el - parsing: Obfuscate backend info
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: DELETE
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: X-Powered-By
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: OTHER
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: DELETE
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: Server
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: OTHER
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: requestHeader
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: X-Akamai-Debug
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: IS_NOT_ONE_OF
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: true
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: Do not expose back-end information unless the request contains an additional secret header. Regularly change the criteria to use a specific unique value for the secret header.
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: HSTS
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: httpStrictTransportSecurity
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: Require all browsers to connect to your site using HTTPS.
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.003] [INFO] devops-prov.el - parsing: Control the settings that minimize the information your website shares with clients and malicious entities to reduce your exposure to threats.
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: #include:Increase_availability.json
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: Increase availability
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: Simulate failover
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: breakConnection
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: contentDeliveryNetwork
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: IS
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: STAGING
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: requestHeader
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: breakconnection
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: Your-Secret-Here
+[2022-07-20T17:00:46.004] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: Simulate an origin connection problem and test the site failover configuration on the CDN staging network.
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: Site failover
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: failAction
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: originTimeout
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: ORIGIN_TIMED_OUT
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: any
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: Specify how edge servers respond when the origin is not available.
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: Origin health
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: healthDetection
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: 10s
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: Monitor the health of your origin by tracking unsuccessful IP connection attempts.
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: Script management
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: scriptManagement
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.005] [INFO] devops-prov.el - parsing: Enable Script Management to minimize performance and availability impacts from third-party JavaScripts.
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: Control how to respond when your origin or third parties are slow or even down to minimize the negative impact on user experience.
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: #include:Minimize_payload.json
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: Minimize payload
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: Compressible objects
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: gzipResponse
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: ALWAYS
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: contentType
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: application/*javascript*
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: application/*json*
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: application/*xml*
+[2022-07-20T17:00:46.006] [INFO] devops-prov.el - parsing: application/text*
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/vnd-ms-fontobject
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/vnd.microsoft.icon
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/x-font-opentype
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/x-font-truetype
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/x-font-ttf
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/xmlfont/eot
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: font/eot
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: font/opentype
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: font/otf
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: image/svg+xml
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: image/vnd.microsoft.icon
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: image/x-icon
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: text/*
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/octet-stream*
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/x-font-eot*
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: font/ttf
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/font-ttf
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/font-sfnt
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: application/x-tgif
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: Serve gzip compressed content for text-based formats.
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: all
+[2022-07-20T17:00:46.007] [INFO] devops-prov.el - parsing: Control the settings that reduce the size of the delivered content and decrease the number of bytes sent by your properties. This allows you to cut down the network overhead of your website or API.
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - parsing: origin
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - parsing: CUSTOMER
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - parsing: 
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - parsing: True-Client-IP
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - parsing: PLATFORM_SETTINGS
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - parsing: ${env.originHostname}
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - Replacing '${env.originHostname}' with: 'origin-dev.testing-devops-charlie'
+[2022-07-20T17:00:46.008] [INFO] devops-prov.el - parsing: The Default Rule template contains all the necessary and recommended behaviors. Rules are evaluated from top to bottom and the last matching rule wins.
+[2022-07-20T17:00:46.010] [INFO] devops-prov.envionment - resource hash:  695aec5d59208e73f3615b790db5638244c1ef88bb3597ca5f7ec03f069789e8
