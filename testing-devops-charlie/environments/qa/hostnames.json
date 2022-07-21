@@ -1,7 +1,7 @@
 [
     {
         "cnameFrom": "qa.testing-devops-charlie",
-        "cnameTo": "qa.testing-devops-charlie.edgekey.net",
+        "cnameTo": "wildcard.davidbartosh.com.edgekey.net",
         "cnameType": "EDGE_HOSTNAME",
         "edgeHostnameId": null
     }
