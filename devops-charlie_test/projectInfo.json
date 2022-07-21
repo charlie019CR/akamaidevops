@@ -1,0 +1,18 @@
+{
+    "productId": "Fresca",
+    "contractId": "1-1NC95D",
+    "groupIds": [
+        19293
+    ],
+    "environments": [
+        "devops-charlie_test",
+        "dev",
+        "staging"
+    ],
+    "version": "0.7.8-RELEASE",
+    "isSecure": true,
+    "edgeGridConfig": {
+        "section": "papi"
+    },
+    "name": "devops-charlie_test"
+}

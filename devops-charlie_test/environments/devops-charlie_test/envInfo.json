@@ -1,0 +1,17 @@
+{
+    "name": "devops-charlie_test",
+    "propertyName": "devops-charlie_test.devops-charlie_test",
+    "groupId": 19293,
+    "isSecure": true,
+    "propertyId": 818402,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "cfonseca",
+        "updatedDate": "2022-07-21T00:56:39Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "productId": "prd_Fresca",
+        "ruleFormat": "v2021-09-22"
+    },
+    "suggestedRuleFormat": "v2021-09-22"
+}
